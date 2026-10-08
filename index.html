@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SHEN DAKE / 沈大可 — Works">
+  <title>SHEN DAKE</title>
+  <link rel="icon" type="image/png" href="assets/favicon/D024.png">
+  <link rel="stylesheet" href="styles.css?v=23">
+  <script src="paintings-data.js?v=6" defer></script>
+  <script src="paintings.js?v=1" defer></script>
+  <script src="digital-paintings-data.js?v=4" defer></script>
+  <script src="digital-paintings.js?v=5" defer></script>
+  <script src="site.js?v=8" defer></script>
+</head>
+<body>
+  <aside class="sidebar" aria-label="项目目录">
+    <div class="sidebar-heading">
+      <p class="site-name"><a href="#home" data-route="home">SHEN DAKE</a></p>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="directory">Menu</button>
+    </div>
+
+    <nav class="directory" id="directory">
+      <div class="directory-section">
+        <p class="directory-heading">Expositions</p>
+        <ul>
+          <li><a href="#project-xiaodake" data-route="project-xiaodake" lang="fr">Avons-nous besoin de Xiaodake ?</a></li>
+          <li><a href="#project-plus-on-regarde" data-route="project-plus-on-regarde" lang="fr">Plus on regarde, plus on se trompe</a></li>
+        </ul>
+      </div>
+
+      <div class="directory-section">
+        <p class="directory-heading">Travaux</p>
+        <ul>
+          <li><a href="#graffiti" data-route="graffiti">Graffiti</a></li>
+          <li><a href="#musique-experimentale" data-route="musique-experimentale" lang="fr">Musique expérimentale</a></li>
+          <li><a href="#video" data-route="video">Vidéo</a></li>
+        </ul>
+      </div>
+
+      <div class="directory-section">
+        <p class="directory-heading">Plus</p>
+        <ul>
+          <li><a href="#peintures" data-route="peintures">Peintures</a></li>
+          <li><a href="#peintures-numeriques" data-route="peintures-numeriques">Peintures numériques</a></li>
+        </ul>
+      </div>
+
+      <div class="directory-section directory-section-bottom">
+        <ul>
+          <li><a href="#info" data-route="info">Info</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section class="view home-view" data-view="home" hidden>
+      <figure class="home-image-item size-full" data-home-image data-size="full">
+        <img src="assets/images/home/home-image.jpg" alt="" width="3000" height="2000">
+      </figure>
+    </section>
+
+    <article class="view" data-view="project-xiaodake">
+      <header class="project-header">
+        <h1 lang="fr">Avons-nous besoin de Xiaodake ?</h1>
+        <p lang="fr">Exposition personnelle | Académie Centrale des Beaux-Arts, Pékin | 2026</p>
+        <p lang="fr">Peinture, dessin, installation, son</p>
+        <p lang="fr">Conception, production et organisation : Shen Dake</p>
+      </header>
+
+      <div class="audio-item" data-audio-player data-audio-file="asmr.mp3">
+        <audio id="audio-asmr" preload="metadata">
+          <source src="assets/audio-web/asmr.mp3" type="audio/mpeg">
+          Votre navigateur ne prend pas en charge la lecture audio.
+        </audio>
+        <button class="audio-toggle" type="button" aria-controls="audio-asmr">Play</button>
+      </div>
+
+      <figure class="media-item size-full" data-image-number="1" data-size="full">
+        <img src="assets/images/xiaodake/01.jpg" alt="《我们需要小达克吗？》图片 01" width="2400" height="1800">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="2" data-size="large">
+        <img src="assets/images/xiaodake/02.jpg" alt="《我们需要小达克吗？》图片 02" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="3" data-size="large">
+        <img src="assets/images/xiaodake/03.jpg" alt="《我们需要小达克吗？》图片 03" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="4" data-size="large">
+        <img src="assets/images/xiaodake/04.jpg" alt="《我们需要小达克吗？》图片 04" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-full" data-image-number="5" data-size="full">
+        <img src="assets/images/xiaodake/05.jpg" alt="《我们需要小达克吗？》图片 05" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-medium" data-image-number="6" data-size="medium">
+        <img src="assets/images/xiaodake/06.jpg" alt="《我们需要小达克吗？》图片 06" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-medium" data-image-number="7" data-size="medium">
+        <img src="assets/images/xiaodake/07.jpg" alt="《我们需要小达克吗？》图片 07" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-medium" data-image-number="8" data-size="medium">
+        <img src="assets/images/xiaodake/08.jpg" alt="《我们需要小达克吗？》图片 08" loading="lazy">
+      </figure>
+
+      <figure class="video-item">
+        <div class="video-frame">
+          <iframe src="https://www.youtube-nocookie.com/embed/qYmZVrpuRTQ" title="Avons-nous besoin de Xiaodake ? | Documentation d’exposition | 2026" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </figure>
+    </article>
+
+    <article class="view" data-view="project-plus-on-regarde" lang="fr" hidden>
+      <header class="project-header project-header-spaced">
+        <h1>Plus on regarde, plus on se trompe</h1>
+        <p>Exposition en duo de Shen Dake et Mo Nijian | Ni Gallery, Pékin | 2026</p>
+        <p>Peintures numériques imprimées sur panneaux composites en aluminium, installation</p>
+        <p>Commissariat : Ke Nini</p>
+      </header>
+
+      <figure class="media-item size-large" data-image-number="1" data-size="large">
+        <img src="assets/images/plus-on-regarde/01.jpg" alt="Plus on regarde, plus on se trompe — image 01" width="2400" height="1600">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="2" data-size="large">
+        <img src="assets/images/plus-on-regarde/02.jpg" alt="Plus on regarde, plus on se trompe — image 02" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="3" data-size="large">
+        <img src="assets/images/plus-on-regarde/03.jpg" alt="Plus on regarde, plus on se trompe — image 03" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="4" data-size="large">
+        <img src="assets/images/plus-on-regarde/04.jpg" alt="Plus on regarde, plus on se trompe — image 04" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="5" data-size="large">
+        <img src="assets/images/plus-on-regarde/05.jpg" alt="Plus on regarde, plus on se trompe — image 05" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="6" data-size="large">
+        <img src="assets/images/plus-on-regarde/06.jpg" alt="Plus on regarde, plus on se trompe — image 06" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="7" data-size="large">
+        <img src="assets/images/plus-on-regarde/07.jpg" alt="Plus on regarde, plus on se trompe — image 07" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="8" data-size="large">
+        <img src="assets/images/plus-on-regarde/08.jpg" alt="Plus on regarde, plus on se trompe — image 08" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="9" data-size="large">
+        <img src="assets/images/plus-on-regarde/09.jpg" alt="Plus on regarde, plus on se trompe — image 09" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="10" data-size="large">
+        <img src="assets/images/plus-on-regarde/10.jpg" alt="Plus on regarde, plus on se trompe — image 10" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="11" data-size="large">
+        <img src="assets/images/plus-on-regarde/11.jpg" alt="Plus on regarde, plus on se trompe — image 11" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="12" data-size="large">
+        <img src="assets/images/plus-on-regarde/12.jpg" alt="Plus on regarde, plus on se trompe — image 12" loading="lazy">
+      </figure>
+
+      <figure class="media-item size-large" data-image-number="13" data-size="large">
+        <img src="assets/images/plus-on-regarde/13.jpg" alt="Plus on regarde, plus on se trompe — image 13" loading="lazy">
+        <figcaption class="photo-credit">Photographies fournies par Ni Gallery</figcaption>
+      </figure>
+    </article>
+
+    <article class="view graffiti-project" data-view="graffiti" hidden>
+      <header class="project-header">
+        <h1>Graffitis de Xiaodake</h1>
+        <p>Série de graffitis | Chine | 2023–2026</p>
+      </header>
+
+      <div class="audio-item" data-audio-player data-audio-file="graffiti-musique-01.mp3">
+        <audio id="audio-graffiti" preload="metadata">
+          <source src="assets/audio-web/graffiti-musique-01.mp3" type="audio/mpeg">
+          Votre navigateur ne prend pas en charge la lecture audio.
+        </audio>
+        <button class="audio-toggle" type="button" aria-controls="audio-graffiti">Play</button>
+      </div>
+
+      <div class="graffiti-centered">
+        <figure class="graffiti-medium graffiti-gif">
+          <img src="assets/images/graffiti/graffiti-loop.gif" alt="">
+        </figure>
+
+        <div class="graffiti-texts">
+          <p class="graffiti-text graffiti-text-fr" lang="fr">Je ne veux plus dérouler le récit de manière linéaire. Après avoir été classés, les graffitis se sont effondrés sur eux-mêmes — exactement à l’opposé de la sensation d’une balle qui, au moment de l’impact, éclate en spirale. À l’instant même où ils ont été inscrits dans une liste, ils ont perdu cette impression originelle de fragments dispersés et tombants — une sensation qui, pour moi, correspond le mieux à la vie sociale d’aujourd’hui. Ils sont devenus comme des écoliers assis en classe, les deux mains bien posées devant eux, sans pour autant avoir l’intention de lever la main pour répondre à une question. Mais ce n’est pas grave. Ils restent tranquillement assis dans cette classe, à attendre, attendre la sonnerie de la fin du cours.Et puis, là encore, tout se passe en un instant : plus aucune trace. Une diffusion sans fin, laissant derrière elle des images rémanentes comme celles d’une balle. Quelle est la destination ? Je n’en sais rien ! De la diffusion, puis encore de la diffusion ; construire, à la manière des vols internationaux, des ponts qui franchissent les distances par des liens faibles. Toi et moi, on n’a pas réussi à se connecter ? Ce n’est pas grave. Il suffit d’attendre. Attendre que cette bande d’enfants ait pressé le dernier bouton laissé sur leur visage par l’adolescence. Xiaodake apparaîtra de nouveau devant toi.</p>
+          <p class="graffiti-text graffiti-text-en" lang="en">I no longer want to unfold the narrative by laying everything out flat. Once the graffiti were sorted and catalogued, they collapsed in on themselves — exactly the opposite of the feeling of a bullet spiralling outward as it hits. The instant they entered a list, they lost their original sense of falling apart into scattered fragments — a feeling that, to me, comes closest to the way social life feels today. Instead, they became like primary-school children sitting in a classroom with both hands properly placed on the desk, but with no intention of raising a hand to answer the question. But that’s all right. They sit quietly in this classroom, waiting, waiting for the bell to ring at the end of class.And then, once again, everything happens in an instant: they vanish without a trace. Spreading endlessly, leaving behind afterimages like bullets. Where is the destination? I don’t know! More spreading on top of spreading, building bridges across distance through weak ties, in the manner of international flights. You and I didn’t manage to connect? That’s all right. You only need to wait. Wait until this group of children has squeezed the very last pimple left on their faces by adolescence. Xiaodake will appear in front of you again.</p>
+        </div>
+
+        <div class="graffiti-sequence">
+        <figure class="graffiti-sequence-item" data-image-number="1">
+          <img src="assets/images/graffiti/graffiti-01.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="2">
+          <img src="assets/images/graffiti/graffiti-02.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="3">
+          <img src="assets/images/graffiti/graffiti-03.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="4">
+          <img src="assets/images/graffiti/graffiti-04.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="5">
+          <img src="assets/images/graffiti/graffiti-05.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="6">
+          <img src="assets/images/graffiti/graffiti-06.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="7">
+          <img src="assets/images/graffiti/graffiti-07.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="8">
+          <img src="assets/images/graffiti/graffiti-08.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="9">
+          <img src="assets/images/graffiti/graffiti-09.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="10">
+          <img src="assets/images/graffiti/graffiti-10.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="11">
+          <img src="assets/images/graffiti/graffiti-11.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="12">
+          <img src="assets/images/graffiti/graffiti-12.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="13">
+          <img src="assets/images/graffiti/graffiti-13.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="14">
+          <img src="assets/images/graffiti/graffiti-14.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="15">
+          <img src="assets/images/graffiti/graffiti-15.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="16">
+          <img src="assets/images/graffiti/graffiti-16.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="17">
+          <img src="assets/images/graffiti/graffiti-17.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="18">
+          <img src="assets/images/graffiti/graffiti-18.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="19">
+          <img src="assets/images/graffiti/graffiti-19.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="20">
+          <img src="assets/images/graffiti/graffiti-20.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="21">
+          <img src="assets/images/graffiti/graffiti-21.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="22">
+          <img src="assets/images/graffiti/graffiti-22.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="23">
+          <img src="assets/images/graffiti/graffiti-23.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="24">
+          <img src="assets/images/graffiti/graffiti-24.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="25">
+          <img src="assets/images/graffiti/graffiti-25.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="26">
+          <img src="assets/images/graffiti/graffiti-26.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="27">
+          <img src="assets/images/graffiti/graffiti-27.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="28">
+          <img src="assets/images/graffiti/graffiti-28.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="29">
+          <img src="assets/images/graffiti/graffiti-29.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="30">
+          <img src="assets/images/graffiti/graffiti-30.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="31">
+          <img src="assets/images/graffiti/graffiti-31.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="32">
+          <img src="assets/images/graffiti/graffiti-32.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="33">
+          <img src="assets/images/graffiti/graffiti-33.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="34">
+          <img src="assets/images/graffiti/graffiti-34.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="35">
+          <img src="assets/images/graffiti/graffiti-35.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="36">
+          <img src="assets/images/graffiti/graffiti-36.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="37">
+          <img src="assets/images/graffiti/graffiti-37.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="38">
+          <img src="assets/images/graffiti/graffiti-38.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="39">
+          <img src="assets/images/graffiti/graffiti-39.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="40">
+          <img src="assets/images/graffiti/graffiti-40.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="41">
+          <img src="assets/images/graffiti/graffiti-41.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="42">
+          <img src="assets/images/graffiti/graffiti-42.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="43">
+          <img src="assets/images/graffiti/graffiti-43.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="44">
+          <img src="assets/images/graffiti/graffiti-44.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="45">
+          <img src="assets/images/graffiti/graffiti-45.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="46">
+          <img src="assets/images/graffiti/graffiti-46.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="47">
+          <img src="assets/images/graffiti/graffiti-47.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="48">
+          <img src="assets/images/graffiti/graffiti-48.jpg" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="49">
+          <img src="assets/images/graffiti/graffiti-49.png" alt="" loading="lazy">
+        </figure>
+        <figure class="graffiti-sequence-item" data-image-number="50">
+          <img src="assets/images/graffiti/graffiti-50.jpg" alt="" loading="lazy">
+        </figure>
+        </div>
+
+        <div class="graffiti-color-sequence">
+          <figure class="graffiti-color-item">
+            <img src="assets/images/graffiti/graffiti-color-01.png" alt="" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="view music-project" data-view="musique-experimentale" hidden>
+      <header class="music-album-heading">
+        <p class="music-album-title" lang="zh-CN">高频电磁信号非定向弥散现象观测设施建设项目可行性研究报告（一期）</p>
+        <p class="music-album-title" lang="en">Feasibility Study Rpt: HF-EM Signal Non-Directional Diffusion Obs. Facilities (Phase 1)</p>
+        <p class="music-album-meta" lang="fr">Album indépendant de musique expérimentale | 4 tracks | 2024–2025</p>
+      </header>
+
+      <figure class="music-cover">
+        <img src="assets/images/musique-experimentale/album-cover.jpg" alt="" width="917" height="917">
+      </figure>
+
+      <p class="music-download"><a href="https://xiaodake.bandcamp.com/album/feasibility-study-rpt-hf-em-signal-non-directional-diffusion-obs-facilities-phase-1" target="_blank" rel="noopener noreferrer">download</a></p>
+
+      <div class="music-description">
+        <div class="music-description-cn" lang="zh-CN">
+          <p>【档案片段解密】</p>
+          <p>1997年夏 ▉▉民用观测站日志#97X21</p>
+          <p>“异常信号波动持续4分38秒...疑似非脉冲式辐射源”</p>
+          <p>2001年冬 ▉▉国用观测站备忘录#0103</p>
+          <p>“高频信号记录磁带在-23℃环境自燃...技术员王██失明”（附件2E遗失）</p>
+          <p>2005年春 ▉▉军区加密简报#5TH-74</p>
+          <p>“弥散信号出现意识斡旋特征...建议启动红蓝布象限协议，31：33”（附电子u盘）</p>
+          <p>《高频电磁信号非定向弥散现象观测设施建设项目可行性研究报告》（一期）</p>
+          <p>基地工程师团队对特殊频段信号的最终完整记录，含 ▉▉驯化方案与相位 ▉▉建造指南。本应在2006年 ▉▉时推动观测设施升级，但所有副本与基地本体于2005年立冬消失。</p>
+        </div>
+
+        <div class="music-description-en" lang="en">
+          <p>【Archival Fragment Decryption】</p>
+          <p>Summer 1997 ▉▉ Civilian Observatory Log #97X21</p>
+          <p>"Anomalous signal fluctuations persisted for 4 minutes 38 seconds... suspected non-pulsed radiation source"</p>
+          <p>Winter 2001 ▉▉ State Observatory Memorandum #0103</p>
+          <p>"High-frequency signal recording tape spontaneously combusted at -23°C... Technician Wang ██ blinded" (Attachment 2E lost)</p>
+          <p>Spring 2005 ▉▉ Military District Encrypted Brief #5TH-74</p>
+          <p>"Diffuse signals exhibit consciousness-mediating characteristics... Recommend activating Red-Blue Tarp Quadrant Protocol, 31:33" (one (1) electronic storage device attached)</p>
+          <p>Feasibility Study Report on the Construction Project of High-Frequency Electromagnetic Signal Non-Directional Diffusion Phenomena Observation Facilities (Phase 1)</p>
+          <p>Final comprehensive documentation of special frequency band signals by base engineering team, including ▉▉ domestication proposals and phase ▉▉ construction protocols.Scheduled to advance facility upgrades by 2006 ▉▉ , yet all copies and primary base structure vanished on Start of Winter, 2005.</p>
+        </div>
+
+        <p class="music-release" lang="en">released June 27, 2025</p>
+      </div>
+
+        <div class="music-album-tracks">
+          <div class="music-track audio-item" data-audio-player>
+            <audio id="audio-album-01" preload="none">
+              <source src="assets/audio-web/musique-experimentale/album-01.mp3" type="audio/mpeg">
+            </audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-album-01">Play</button>
+            <span lang="zh-CN">严肃信号的身高 : <span lang="en">The Stature of Solemn Signals</span></span>
+          </div>
+
+          <div class="music-track audio-item" data-audio-player>
+            <audio id="audio-album-02" preload="none">
+              <source src="assets/audio-web/musique-experimentale/album-02.mp3" type="audio/mpeg">
+            </audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-album-02">Play</button>
+            <span lang="zh-CN">地底深处的动机信号 : <span lang="en">The Motivation Signal from the Depths</span></span>
+          </div>
+
+          <div class="music-track audio-item" data-audio-player>
+            <audio id="audio-album-03" preload="none">
+              <source src="assets/audio-web/musique-experimentale/album-03.mp3" type="audio/mpeg">
+            </audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-album-03">Play</button>
+            <span lang="zh-CN">给能量信号的长条建议 : <span lang="en">Rectangular Advice for Energy Signals</span></span>
+          </div>
+
+          <div class="music-track audio-item" data-audio-player>
+            <audio id="audio-album-04" preload="none">
+              <source src="assets/audio-web/musique-experimentale/album-04.mp3" type="audio/mpeg">
+            </audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-album-04">Play</button>
+            <span lang="zh-CN">独奏信号的高深魅力 : <span lang="en">The Profound Charm of Solo Signals</span></span>
+          </div>
+      </div>
+
+      <section class="music-other-sounds" aria-labelledby="other-sounds-title">
+        <h1 id="other-sounds-title" lang="fr">Autres sons</h1>
+
+        <div class="music-other-list">
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-01" preload="none"><source src="assets/audio-web/musique-experimentale/other-01.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-01">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-02" preload="none"><source src="assets/audio-web/musique-experimentale/other-02.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-02">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-03" preload="none"><source src="assets/audio-web/musique-experimentale/other-03.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-03">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-04" preload="none"><source src="assets/audio-web/musique-experimentale/other-04.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-04">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-05" preload="none"><source src="assets/audio-web/musique-experimentale/other-05.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-05">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-06" preload="none"><source src="assets/audio-web/musique-experimentale/other-06.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-06">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-07" preload="none"><source src="assets/audio-web/musique-experimentale/other-07.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-07">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-08" preload="none"><source src="assets/audio-web/musique-experimentale/other-08.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-08">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-09" preload="none"><source src="assets/audio-web/musique-experimentale/other-09.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-09">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-10" preload="none"><source src="assets/audio-web/musique-experimentale/other-10.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-10">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-11" preload="none"><source src="assets/audio-web/musique-experimentale/other-11.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-11">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-12" preload="none"><source src="assets/audio-web/musique-experimentale/other-12.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-12">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-13" preload="none"><source src="assets/audio-web/musique-experimentale/other-13.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-13">Play</button>
+          </div>
+          <div class="music-other audio-item" data-audio-player>
+            <audio id="audio-other-14" preload="none"><source src="assets/audio-web/musique-experimentale/other-14.mp3" type="audio/mpeg"></audio>
+            <button class="audio-toggle" type="button" aria-controls="audio-other-14">Play</button>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <section class="view video-view" data-view="video" lang="fr" hidden>
+      <div class="video-grid" aria-label="Six œuvres vidéo">
+        <article class="video-cell video-cell-live video-cell-live-one">
+          <div class="video-grid-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/XNfpGvxDGYU" title="Xiaodake au Cement Park, 2025" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h1>Xiaodake au Cement Park, 2025</h1>
+          <p>Documentation vidéo d’une performance individuelle d’improvisation sonore.</p>
+        </article>
+
+        <article class="video-cell video-cell-live video-cell-live-two">
+          <div class="video-grid-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/gQ8eEFIiQ1g" title="Enregistrement de Xiaodake Radio, 2026" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h1>Enregistrement de Xiaodake Radio, 2026</h1>
+          <p>Enregistrement radiophonique pour BCR et DJ set au Solo Club, Pékin</p>
+        </article>
+
+        <article class="video-cell video-cell-small video-cell-three">
+          <div class="video-grid-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/ihtFCm_lW80" title="Le 28 décembre, 2025–2026" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h1>Le 28 décembre, 2025–2026</h1>
+          <p>Vidéo monocanal, photographie d’un dessin sur papier et son stéréo, 9 min 30 s, en boucle</p>
+        </article>
+
+        <article class="video-cell video-cell-small video-cell-four">
+          <div class="video-grid-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/_qJqdcRhboQ" title="T’accompagner cette nuit 11:31, 2025" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h1>T’accompagner cette nuit 11:31, 2025</h1>
+          <p>Vidéo monocanal, peinture numérique et son stéréo, 11 min 31 s</p>
+        </article>
+
+        <article class="video-cell video-cell-small video-cell-five">
+          <div class="video-grid-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/CtJE03Gt_CM" title="Xiaodake, 2025" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h1>Xiaodake, 2025</h1>
+          <p>Vidéo monocanal, peinture numérique et son stéréo, 2 min 19 s</p>
+        </article>
+
+        <article class="video-cell video-cell-small video-cell-six">
+          <div class="video-grid-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/OomasYFF88w" title="À la fin, je ne veux pas qu’il ne me reste de toi qu’une seule sensation, 2026" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h1>À la fin, je ne veux pas qu’il ne me reste de toi qu’une seule sensation, 2026</h1>
+          <p>Performance sonore, Académie centrale des beaux-arts, Pékin, 10 min 30 s</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="view paintings-view" data-view="peintures" hidden>
+      <div class="paintings-archive" data-paintings-archive></div>
+    </section>
+
+    <section class="view paintings-view digital-paintings-view" data-view="peintures-numeriques" hidden>
+      <div class="paintings-archive" data-digital-paintings-archive></div>
+    </section>
+
+    <section class="view info-view" data-view="info" hidden lang="fr">
+      <section class="info-section info-intro">
+        <h1>SHEN DAKE</h1>
+        <p>Shen Dake, né en 2002, vit et travaille à Pékin. Il est actuellement étudiant en master au département de peinture murale de l’Académie Centrale des Beaux-Arts. Sa pratique se développe principalement autour de la peinture, tout en intégrant le son, la vidéo, le graffiti et l’installation.</p>
+      </section>
+
+      <section class="info-section">
+        <h1>Formation</h1>
+        <div class="info-entry">
+          <p>Master, département de peinture murale, atelier d’art public</p>
+          <p>Académie Centrale des Beaux-Arts, Pékin</p>
+          <p>2e année de master</p>
+        </div>
+        <div class="info-entry">
+          <p>Licence en architecture</p>
+          <p>École d’architecture, China Academy of Art, Hangzhou</p>
+          <p>Diplôme obtenu en 2025</p>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <h1>Expositions sélectionnées</h1>
+        <div class="info-entry">
+          <p>2026</p>
+          <p>Le salon comme dispositif</p>
+          <p>Exposition collective, Ni Gallery, Pékin</p>
+        </div>
+        <div class="info-entry">
+          <p>2026</p>
+          <p>Plus on regarde, plus on se trompe</p>
+          <p>Exposition en duo avec Mo Nijian, Ni Gallery, Pékin</p>
+        </div>
+        <div class="info-entry">
+          <p>2026</p>
+          <p>J’ai un ami</p>
+          <p>Exposition collective, Riverside, Hangzhou</p>
+        </div>
+        <div class="info-entry">
+          <p>2026</p>
+          <p>Avons-nous besoin de Xiaodake ?</p>
+          <p>Exposition personnelle, Académie Centrale des Beaux-Arts, Pékin</p>
+        </div>
+      </section>
+
+      <section class="info-section info-contact">
+        <h1>Contact</h1>
+        <p><a href="mailto:xiaodakededizhi@gmail.com">xiaodakededizhi@gmail.com</a></p>
+        <p>Instagram : @xiaodakedeins</p>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
